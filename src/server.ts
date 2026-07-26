@@ -10,7 +10,7 @@ const PORT = 3000;
 
 // Set to true once you're running full batches - false is useful while
 // you're actively watching/debugging individual test cases.
-const HEADLESS = false;
+const HEADLESS = true;
 
 app.get("/", (_req: Request, res: Response) => {
   res.send("QualityGrid Playwright Service is running.");
@@ -87,7 +87,7 @@ app.post("/execute-test", async (req: Request, res: Response) => {
       executionTime: new Date().toISOString(),
     };
 
-    res.status(500).json(result);
+    res.status(200).json(result);
 
   } finally {
     await browser.close();
