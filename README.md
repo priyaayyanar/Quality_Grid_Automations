@@ -13,6 +13,13 @@ n8n (v4.0A) --POST /execute-test--> this service --Playwright--> quality-fashion
                                    TestExecutionResult --> n8n (v4.0B)
 ```
 
+## Demo
+
+A full end-to-end walkthrough — the n8n workflow looping over generated test cases while this service drives Playwright against the live quality-fashion site — is recorded here:
+
+- **[QualityGrid_Full_Demo_With_Website.mp4](QualityGrid_Full_Demo_With_Website.mp4)** — full demo, including the website under test
+- **[PresentationDayPic.jpeg](PresentationDayPic.jpeg)** — presentation day photo
+
 ## Requirements
 
 - Node.js 18+
